@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        
+        <h1>🎥 PICK FLICKS</h1>
+
+       
+        <div id="search-bar">
+            
+            <select id="platform-filter">
+                <option value="all">All Platforms</option>
+                <option value="netflix">Netflix</option>
+                <option value="disney-hotstar">Disney+ Hotstar</option>
+                <option value="crunchyroll">Crunchyroll</option>6
+            </select>
+
+            <div id="filter-bar">
+                <select id="genre-filter">
+                    <option value="all">All</option>
+                    <option value="bollywood">Bollywood</option>
+                    <option value="tollywood">Tollywood</option>
+                    <option value="anime">Anime</option>
+                    <option value="hollywood">Hollywood</option>
+                </select>
+            </div>
+            <input type="text" id="search-input" placeholder="Search for movies..." />
+            <button id="search-button">Search</button>
+           
+
+           
+        </div>
+        
+        </div>
+        
+
+    </header>
+    <button id="shuffle-button">🎲 Random Suggestion</button>
+    <main id="movie-container">
+        
+        <div class="movie" data-title="Jawan" data-genre="bollywood">
+           <a href="http://127.0.0.1:5500/.c/index.html" target="_blank"> <h2>Jawan</h2> </a>
+            <a href="http://127.0.0.1:5500/.c/index.html" target="_blank"><div class="poster" style="background-image: url('https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/shah-rukh-khan--jawan--srk-films-295651-1x1.jpg?VersionId=flG135APjYu35mqHqhjNACK3.P335ZY8');"></div></a>
+        </div>
+
+       
+
+        <div class="movie" data-title="dangal" data-genre="bollywood">
+            <h2>Dangal</h2>
+            <a href="http://127.0.0.1:5500/aman/dangal.html"target="_blank"><div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/9/99/Dangal_Poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="3 idiots" data-genre="bollywood">
+            <h2>3 Idiots</h2>
+            <a href="http://127.0.0.1:5500/aman/3idots.html"target="_blank"><div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="zindagi na milegi dobara" data-genre="bollywood">
+            <h2>Zindagi Na Milegi Dobara</h2>
+            <a href="http://127.0.0.1:5500/aman/zindaginamilegidobara.html"target="_blank"><div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BOGIzYzg5NzItNDRkYS00NmIzLTk3NzQtZWYwY2VlZDhiYWQ4XkEyXkFqcGc@.V1.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="dilwale dulhania le jayenge" data-genre="bollywood">
+            <h2>Dilwale Dulhania Le Jayenge</h2>
+            <a href="http://127.0.0.1:5500/aman/ddlj.html"target="_blank"><div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/8/80/Dilwale_Dulhania_Le_Jayenge_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="kabhi khushi kabhie gham" data-genre="bollywood">
+            <h2>Kabhi Khushi Kabhie Gham</h2>
+           <a href="http://127.0.0.1:5500/aman/kabhikushi.html"target="_blank"> <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/4/4d/Kabhi_Khushi_Kabhie_Gham..._poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="lagaan" data-genre="bollywood">
+            <h2>Lagaan</h2>
+            <a href="http://127.0.0.1:5500/aman/lagan.html"target="_blank">  <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/b/b6/Lagaan.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="gully boy" data-genre="bollywood">
+            <h2>Gully Boy</h2>
+            <a href="http://127.0.0.1:5500/aman/gullyboy.html"target="_blank">  <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/0/07/Gully_Boy_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="queen" data-genre="bollywood">
+            <h2>Queen</h2>
+            <a href="https://www.imdb.com/title/tt28070202/?ref_=nv_sr_srsg_4_tt_6_nm_1_in_0_q_Queen"target="_blank">  <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/4/45/QueenMoviePoster7thMarch.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="chak de india" data-genre="bollywood">
+            <h2>Chak De! India</h2>
+            <a href=""target="_blank">  
+                <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/0/0c/Chak_De%21_India.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="a star is born" data-genre="hollywood">
+            <h2>A Star Is Born</h2>
+            <a href="http://127.0.0.1:5500/aman/starborn.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://i.scdn.co/image/ab67616d0000b273e2d156fdc691f57900134342');"></div></a>
+
+        </div>
+        <div class="movie" data-title="bohemian rhapsody" data-genre="hollywood">
+            <h2>Bohemian Rhapsody</h2>
+            <a href="http://127.0.0.1:5500/aman/bohemianrhapsodi.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://i.scdn.co/image/ab67616d0000b27328581cfe196c266c132a9d62');"></div></a>
+        </div>
+        <div class="movie" data-title="joker" data-genre="hollywood">
+            <h2>Joker</h2>
+            <a href="http://127.0.0.1:5500/aman/joker.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://resizing.flixster.com/YrgoDA1swmWoj7JbfGNWsJ1Y4vc=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzIzNjM3NmRhLWZiOWUtNGFjNC1hMTViLTM1ZWEzNWRkMzI1Zi53ZWJw');"></div></a>
+        </div>
+        <div class="movie" data-title="parasite" data-genre="hollywood">
+            <h2>Parasite</h2>
+            <a href="http://127.0.0.1:5500/aman/paradis.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/I/91EUro56k+L.AC_UF1000,1000_QL80.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="once upon a time in hollywood" data-genre="hollywood">
+            <h2>Once Upon a Time in Hollywood</h2>
+            <a href="http://127.0.0.1:5500/aman/onceuponatimehollywood.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMzMzNmViNjYtN2ViNi00NDM3LWFlMmItNDYyMGIzY2EzZjE2XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="tenet" data-genre="hollywood">
+            <h2>Tenet</h2> <a href="http://127.0.0.1:5500/aman/tenet.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Tenet_movie_poster.jpg/220px-Tenet_movie_poster.jpg');"></div></a>        </div>
+        <div class="movie" data-title="soul" data-genre="hollywood">
+            <h2>Soul</h2>
+            <a href="http://127.0.0.1:5500/aman/soul.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZTZkYjA5MDEtMjY1ZC00ODk5LThjOTUtZDYxODEzYWNjMTU2XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="the invisible man" data-genre="hollywood">
+            <h2>The Invisible Man</h2>
+            <a href="http://127.0.0.1:5500/aman/invisibleman.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BYTM3NDJhZWUtZWM1Yy00ODk4LThjNmMtNDg3OGYzMGM2OGYzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="nomadland" data-genre="hollywood">
+            <h2>Nomadland</h2>
+            <a href="http://127.0.0.1:5500/aman/namadland.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/S/pv-target-images/f63157f62f6fcdae648d3a19c427a305d1045683a340d2194c64d24ecebda92a.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="dune" data-genre="hollywood">
+            <h2>Dune</h2>
+            <a href="http://127.0.0.1:5500/aman/dune.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dune_%282021_film%29.jpg/220px-Dune_%282021_film%29.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="the suicide squad" data-genre="hollywood">
+            <h2>The Suicide Squad</h2>
+            <a href="http://127.0.0.1:5500/aman/suisaidsquad.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMWU3Y2NlZmEtMjJjNS00ZWMxLWE1MzctYWYyMjMzMDdkNTE4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="Bleach" data-genre="anime">
+            <h2>Bleach</h2>
+            <a href="http://127.0.0.1:5500/aman/bleach.html" target="_blank">
+            <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Bleachanime.png/220px-Bleachanime.png');"></div>
+            </a>
+            </div>
+            
+            <div class="movie" data-title="Sailor Moon" data-genre="anime">
+            <h2>Sailor Moon</h2>
+            <a href="http://127.0.0.1:5500/aman/sailermoon.html" target="_blank">
+            <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZDc2NDRiZDItMDdkOS00OTJjLWExYjAtNDQ5ZGJiYmE5NDJiXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div>
+            </a>
+            </div>
+            <div class="movie" data-title="Yu Yu Hakusho" data-genre="anime">
+                <h2>Yu Yu Hakusho</h2>
+                <a href="http://127.0.0.1:5500/aman/yuyuhukusho.html" target="_blank">
+                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNWJmODlhODItZTZmYi00ZGNjLTk1NmYtMjE5M2IwYjI2MzI2XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div>
+                </a>
+                </div>
+                <div class="movie" data-title="Inuyasha" data-genre="anime">
+                    <h2>Inuyasha</h2>
+                    <a href="http://127.0.0.1:5500/aman/inuyasha.html" target="_blank">
+                    <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZjQxYThmNGEtNzU2ZS00NjZmLWEzNTItMWM2NmU0ZTc5NjY3XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div>
+                    </a>
+                    </div>
+                    <div class="movie" data-title="Cowboy Bebop" data-genre="anime">
+                        <h2>Cowboy Bebop</h2>
+                        <a href="http://127.0.0.1:5500/aman/CowboyBebop.html" target="_blank">
+                        <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Cowboy_Bebop_key_visual.jpg/220px-Cowboy_Bebop_key_visual.jpg');"></div>
+                        </a>
+                        </div>
+                        <div class="movie" data-title="Neon Genesis Evangelion" data-genre="anime">
+                            <h2>Neon Genesis Evangelion</h2>
+                            <a href="http://127.0.0.1:5500/aman/NeonGenesisEvangelion.html" target="_blank">
+                            <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZjZjZGI3ZDQtODNmZC00NjE0LTlmYTUtOTljMWI2YjNmMTQ0XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div>
+                            </a>
+                            </div>
+                            <div class="movie" data-title="Rurouni Kenshin" data-genre="anime">
+                                <h2>Rurouni Kenshin</h2>
+                                <a href="" target="_blank">
+                                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNzYyY2U1N2EtOGNlYy00YzMxLWI2ZjgtMDZmMzRhNjIzMTcyXkEyXkFqcGc@.V1.jpg');"></div>
+                                </a>
+                                </div>
+                                                                                                                              
+        <div class="movie" data-title="top gun: maverick" data-genre="hollywood">
+            <h2>Top Gun: Maverick</h2>
+            <a href=""target="_blank">  
+                <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/1/13/Top_Gun_Maverick_Poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="avatar: the way of water" data-genre="hollywood">
+            <h2>Avatar: The Way of Water</h2>
+            <a href=""target="_blank">  
+                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNmQxNjZlZTctMWJiMC00NGMxLWJjNTctNTFiNjA1Njk3ZDQ5XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="everything everywhere all at once" data-genre="hollywood">
+            <h2>Everything Everywhere All at Once</h2>
+            <a href=""target="_blank">  
+                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BOWNmMzAzZmQtNDQ1NC00Nzk5LTkyMmUtNGI2N2NkOWM4MzEyXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="the batman" data-genre="hollywood">
+            <h2>The Batman</h2>
+            <a href="http://127.0.0.1:5500/aman/batman.html"target="_blank">  
+                <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        
+
+        <div class="movie" data-title="attack on titan" data-genre="anime">
+            <h2>Attack on Titan</h2>
+            <a href="http://127.0.0.1:5500/aman/atackontitan.html"target="_blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNjY4MDQxZTItM2JjMi00NjM5LTk0MWYtOTBlNTY2YjBiNmFjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="naruto" data-genre="anime">
+            <h2>Naruto</h2>
+            <a href="http://127.0.0.1:5500/aman/naruto.html"target="_blank">   <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="demon slayer" data-genre="anime">
+            <h2>Demon Slayer</h2>
+            <a href="http://127.0.0.1:5500/aman/demonslayar.html"target="_blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNmQ5Zjg2ZTYtMGZmNC00M2Y3LTgwZGQtYmQ3NWI5MDdhZWNjXkEyXkFqcGc@.V1.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="death note" data-genre="anime">
+            <h2>Death Note</h2>
+            <a href="http://127.0.0.1:5500/aman/deathnote.html"target="_blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@.V1.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="one piece" data-genre="anime">
+            <h2>One Piece</h2>
+            <a href="http://127.0.0.1:5500/aman/onepiece.html"target="_blank"> <div class="poster" style="background-image: url('https://images.justwatch.com/poster/248497985/s718/one-piece-1999.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="fullmetal alchemist brotherhood" data-genre="anime">
+            <h2>Fullmetal Alchemist: Brotherhood</h2>
+            <a href="http://127.0.0.1:5500/aman/alchemist.html"target="_blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNDczZWMyMjEtZDI0ZS00YThjLWE2MjEtNTIxNmVmZDhkNDg5XkEyXkFqcGc@.V1.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="my hero academia" data-genre="anime">
+            <h2>My Hero Academia</h2>
+            <a href="http://127.0.0.1:5500/aman/myheroacademia.html"target="_blank">  <div class="poster" style="background-image: url('https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12793542_b_v13_ak.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="hunter x hunter" data-genre="anime">
+            <h2>Hunter x Hunter</h2>
+            <a href="http://127.0.0.1:5500/aman/hunterxhunter.html"target="_blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BYzYxOTlkYzctNGY2MC00MjNjLWIxOWMtY2QwYjcxZWIwMmEwXkEyXkFqcGc@.V1.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="tokyo ghoul" data-genre="anime">
+            <h2>Tokyo Ghoul</h2>
+            <a href="http://127.0.0.1:5500/aman/TokyoGhou.html"target="_blank"> <div class="poster" style="background-image: url('https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11999443_b_v8_ab.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="jujutsu kaisen" data-genre="anime">
+            <h2>Jujutsu Kaisen</h2>
+            <a href=""target="_blank"> <div class="poster" style="background-image: url('https://comenian.org/wp-content/uploads/2024/01/unnamed-87.png');"></div></a>
+        </div>
+
+        <div class="movie" data-title="The Empress" data-genre="Historical Drama" data-platform="netflix">
+            <h2> The Empress</h2>
+            <a href=""target="_blank">  <div class="poster" style="background-image: url('https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRw2sK8jMZXtqMgOmqgEI2nPdXhoUBuSMPhY7fa52Aer9mJiqCyHDs2aZQg5s1rSsJMmviACA0msonlqt1fFcFlC2AwqM1Tu8DlwcKSRlSN2w_3pdsRA0XaYxT-URx5zMaQBMA.jpg?r=313');"></div></a>
+        </div>
+        <div class="movie" data-title="Arcane" data-genre="Animation, Fantasy" data-platform="netflix">
+            <h2>Arcane</h2>
+            <a href=""target="_blank">  <div class="poster" style="background-image: url('https://resizing.flixster.com/qKecUZNM4r1B6Mc-KmMAWbAVnG8=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvYWY2ZjNlYzEtMmZlMS00NzBiLWJhODEtY2NhYWFkMmFhYzExLmpwZw==');"></div></a>
+        </div>
+        <div class="movie" data-title="Yeh Kaali Kaali Ankhein" data-genre="Thriller, Drama" data-platform="netflix">
+            <h2>Yeh Kaali Kaali Ankhein</h2>
+            <a href="https://www.imdb.com/title/tt14160712/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Yeh%2520Kaali%2520Kaali%2520Ankhein"target="_blank">  <div class="poster" style="background-image: url('https://images.ctfassets.net/4cd45et68cgf/4hlkndTOiWJ0o8BUUa8CIQ/ce589022eb6487b4206b7ec208d86922/EN-GB_YKKA-S2_Main_Vertical_4x5_RGB_PRE.jpg?w=2000');"></div></a>
+        </div>
+        <div class="movie" data-title="Cobra Kai" data-genre="Action, Comedy" data-platform="netflix">
+            <h2>Cobra Kai</h2>
+            <a href="https://www.imdb.com/title/tt7221388/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_Cobra%2520Kai"target="_blank">  <div class="poster" style="background-image: url('https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABekVGEJ0F6iwUD4sbNTs1OPPH2n-y6JutfPnMg5e0f8l6vXldLqwwSlHhE1N84oldmwP7PHf5Me70cEJJ2-1LJNInV6XJEJQQHHwt8BdvmLokb6tet_em8aziykwWCa2tGD_8Q.jpg?r=5c7');"></div></a>
+        </div>
+       <div class="movie" data-title="A Man on the Inside" data-genre="Crime, Drama" data-platform="netflix">
+            <h2>A Man on the Inside</h2>
+            <a href="https://www.imdb.com/title/tt26670955/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_A%2520Man%2520on%2520the%2520Inside"target="blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BYzgwOGIwZjAtZTg0OS00ZGRkLTgxMjUtMjU2NDA2Yjc4NTc1XkEyXkFqcGc@._V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        
+        <div class="movie" data-title="Re:ZERO - Starting Life in Another World - Season 3" data-genre="Fantasy, Drama" data-platform="crunchyroll">
+            <h2>Re:ZERO - Starting Life in Another World - Season 3</h2>
+            <a href="https://www.imdb.com/title/tt5607616/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Re%253AZERO%2520-%2520Starting%2520Life%2520in%2520Another"target="_blank">  <div class="poster" style="background-image: url('https://a.storyblok.com/f/178900/847x1200/5ea9e5d8dc/re-zero-starting-life-in-another-world-staffel-3-key-visual.jpg/m/filters:quality(95)format(webp)');"></div></a>
+        </div>
+        <div class="movie" data-title="Dragon Ball Daima" data-genre="Adventure, Action" data-platform="crunchyroll">
+            <h2>Dragon Ball Daima</h2>
+            <a href="https://www.imdb.com/title/tt29485149/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Dragon%2520Ball%2520Daima"target="blank">  <div class="poster" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQzHkIJvUz2uJQ9DYp2JWM2X-rRbbDQWHUdQD-74ozgqkuzDFIvuSRoLSLgu7xoHYwZ8__tIAQgTit3QAFhZ5mk8yAgOJCw6HVeU-t09O1hQVxlOn8rVJEG7Et9ZIiaa0nznd42BMTKtTcHminWI987ExJb7gvI3xjo2gHOnv1VZsel3zjeLmwisyrdaI/s16000-rw/OIG3.jpeg');"></div></a>
+        </div>
+        <div class="movie" data-title="Blue Lock - Season 2" data-genre="Sports, Drama" data-platform="crunchyroll">
+            <h2>Blue Lock - Season 2</h2>
+            <a href="https://www.imdb.com/title/tt14904280/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Blue%2520Lock%2520-%2520Season%25202"target="_blank">   <div class="poster" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBbRud1QxQ2bycEwrdD_WWSXZePU-yiAgZQ&s');"></div></a>
+        </div>
+        <div class="movie" data-title="Tower of God - Season 2" data-genre="Adventure, Fantasy" data-platform="crunchyroll">
+            <h2>Tower of God - Season 2</h2>
+            <a href="https://www.imdb.com/title/tt12057106/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Tower%2520of%2520God%2520-%2520Season%25202"target="_blank">   <div class="poster" style="background-image: url('https://a.storyblok.com/f/178900/1200x1696/3a62b9cb01/tower-of-god-season-2-cour-2-key-visual.jpg/m/filters:quality(95)format(webp)');"></div></a>
+        </div>
+        <div class="movie" data-title="Dan Da Dan" data-genre="Action, Supernatural" data-platform="crunchyroll">
+            <h2>Dan Da Dan</h2>
+            <a href="https://www.imdb.com/title/tt33343397/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_Dan%2520Da%2520Dan"target="_blank">  <div class="poster" style="background-image: url('https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/13839ea2b48b0323417b23813a090c93.jpg');"></div></a>
+        </div>
+        
+        
+        <div class="movie" data-title="Special Ops: Lioness" data-genre="Action, Thriller" data-platform="disney-hotstar">
+    <h2>Special Ops: Lioness</h2>
+    <a href="https://www.imdb.com/title/tt13111078/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Special%2520Ops%253A%2520Lioness"target="_blank">  <div class="poster" style="background-image: url('https://static0.srcdn.com/wordpress/wp-content/uploads/2023/06/special-ops-lioness-poster.jpeg');"></div></a>
+</div>
+<div class="movie" data-title="The Night Manager" data-genre="Spy Thriller" data-platform="disney-hotstar">
+    <h2>The Night Manager</h2>
+    <a href="https://www.imdb.com/title/tt1399664/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_The%2520Night%2520Manager"target="blank">   <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZTIxMGY2YzgtMTNjMS00NGY3LWFmNmEtNmNkYmRjNGFiNDJiXkEyXkFqcGc@._V1_FMjpg_UX1000.jpg');"></div></a>
+</div>
+<div class="movie" data-title="Criminal Justice" data-genre="Crime, Drama" data-platform="disney-hotstar">
+    <h2>Criminal Justice</h2>
+    <a href="https://www.imdb.com/title/tt9095260/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Criminal%2520Justice"target="blank">   <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMTU0ZTY1NDktZjA0OS00N2ZlLWJiNGQtNzNmOGM3NDAxYTY2XkEyXkFqcGc@._V1.jpg');"></div></a>
+</div>
+<div class="movie" data-title="Aarya" data-genre="Crime, Thriller" data-platform="disney-hotstar">
+    <h2>Aarya</h2>
+    <a href="https://www.imdb.com/title/tt12448030/?ref_=nv_sr_srsg_0_tt_2_nm_6_in_0_q_Aarya"target="blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZGQ3OGQ2ZjktODhlMy00YTg2LWIxOTEtYzI5Mjg3MGNkMDQzXkEyXkFqcGc@._V1.jpg');"></div></a>
+</div>
+<div class="movie" data-title="Loki Season 2" data-genre="Fantasy, Superhero" data-platform="disney-hotstar">
+    <h2>Loki Season 2</h2>
+    <a href="https://www.imdb.com/title/tt21209876/?ref_=nv_sr_srsg_0_tt_7_nm_0_in_0_q_Loki%2520Season%25202"target="_blank">  <div class="poster" style="background-image: url('https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_loki_s2_finale_poster_rebrand_581b38b6.jpeg?region=0%2C0%2C540%2C810');"></div></a>
+</div>
+
+
+
+
+        <div class="movie" data-title="bahubali the beginning" data-genre="tollywood">
+            <h2>Bahubali: The Beginning</h2>
+            <a href="http://127.0.0.1:5500/.c/bahubali.html"target="_blank">   <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/5/5f/Baahubali_The_Beginning_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="bahubali 2 the conclusion" data-genre="tollywood">
+            <h2>Bahubali 2: The Conclusion</h2>
+            <a href="http://127.0.0.1:5500/.c/bahubali2.html"target="_blank"> <div class="poster" style="background-image: url('https://m.media-amazon.com/images/I/71i8a-PnChL.AC_UF1000,1000_QL80.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="rrr" data-genre="tollywood">
+            <h2>RRR</h2>
+            <a href="http://127.0.0.1:5500/.c/rrr.html">  <div class="poster" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBTqE2khXL2CLlaDqIAYNiYWYjNqhb4kIimw&s');"></div></a>
+        </div>
+        <div class="movie" data-title="pushpa the rise" data-genre="tollywood">
+            <h2>Pushpa: The Rise</h2>
+            <a href="http://127.0.0.1:5500/.c/pushpa.html"target="_blank">  <div class="poster" style="background-image: url('https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/pushpa--the-rise-et00129538-08-12-2021-01-21-46.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="kgf chapter 1" data-genre="tollywood">
+            <h2>KGF Chapter 1</h2>
+            <a href="http://127.0.0.1:5500/.c/kgf1.html"target="_blank">   <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BM2M0YmIxNzItOWI4My00MmQzLWE0NGYtZTM3NjllNjIwZjc5XkEyXkFqcGc@.V1.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="iron man" data-genre="hollywood">
+            <h2>Iron Man</h2>
+            <a href="http://127.0.0.1:5500/.c/ironman.html"target="_blank">  <div class="poster" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbPwkWCczwswtv5Ikk3DG6786E5obSkzhHMA&s');"></div></a>
+        </div>
+        <div class="movie" data-title="iron man 2" data-genre="hollywood">
+            <h2>Iron Man 2</h2>
+            <a href="http://127.0.0.1:5500/.c/ironman2.html"target="_blank">   <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/e/ed/Iron_Man_2_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="iron man 3" data-genre="hollywood">
+            <h2>Iron Man 3</h2>
+            <a href="http://127.0.0.1:5500/.c/ironman3.html"target="blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMjIzMzAzMjQyM15BMl5BanBnXkFtZTcwNzM2NjcyOQ@@._V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="the avengers" data-genre="hollywood">
+            <h2>The Avengers</h2>
+            <a href="http://127.0.0.1:5500/.c/theavengers.html"target="blank">  <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/8/8a/The_Avengers_%282012_film%29_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="avengers age of ultron" data-genre="hollywood">
+            <h2>Avengers: Age of Ultron</h2>
+            <a href="http://127.0.0.1:5500/.c/avengerageofultron.html"target="blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BODBhYTg1NGQtNGVmNS00ZTdiLThjYTYtZDFkNzRiNTZmNDZjXkEyXkFqcGc@._V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="avengers infinity war" data-genre="hollywood">
+            <h2>Avengers: Infinity War</h2>
+            <a href="http://127.0.0.1:5500/.c/infinitywar.html"target="_blank">  <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="avengers endgame" data-genre="hollywood">
+            <h2>Avengers: Endgame</h2>
+            <a href="http://127.0.0.1:5500/.c/endgame.html"target="_blank">   <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg');"></div></a>
+        </div>
+
+        <div class="movie" data-title="captain america the first avenger" data-genre="hollywood">
+            <h2>Captain America: The First Avenger</h2>
+            <a href="http://127.0.0.1:5500/.c/captainamericafirstavenger.html"target="_blank">  <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/3/37/Captain_America_The_First_Avenger_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="captain america the winter soldier" data-genre="hollywood">
+            <h2>Captain America: The Winter Soldier</h2>
+            <a href="http://127.0.0.1:5500/.c/captainamericawintersoldier.html"target="blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNWY1NjFmNDItZDhmOC00NjI1LWE0ZDItMTM0MjBjZThiOTQ2XkEyXkFqcGc@._V1.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="captain america civil war" data-genre="hollywood">
+            <h2>Captain America: Civil War</h2>
+            <a href="http://127.0.0.1:5500/.c/captainamericacivilwar.html"target="_blank">  <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/5/53/Captain_America_Civil_War_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="thor" data-genre="hollywood">
+            <h2>Thor</h2>
+            <a href="http://127.0.0.1:5500/.c/thor.html">   <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNjRhNGZjZjEtYTQzYS00OWUxLThjNGEtMTIwMTE2ZDFlZTZkXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="thor the dark world" data-genre="hollywood">
+            <h2>Thor: The Dark World</h2>
+            <a href="http://127.0.0.1:5500/.c/thorthedarkworld.html"target="blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMTQyNzAwOTUxOF5BMl5BanBnXkFtZTcwMTE0OTc5OQ@@._V1.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="thor ragnarok" data-genre="hollywood">
+            <h2>Thor: Ragnarok</h2>
+            <a href="http://127.0.0.1:5500/.c/thorrangrok.html">  <div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/7/7d/Thor_Ragnarok_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="black widow" data-genre="hollywood">
+            <h2>Black Widow</h2>
+            <a href="http://127.0.0.1:5500/.c/blackwidow.html"target="_blank"> <div class="poster" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zNHy_soKowOaN3w2oa1jL7_TmXu4jxHmlQ&s');"></div></a>
+        </div>
+        <div class="movie" data-title="guardians of the galaxy" data-genre="hollywood">
+            <h2>Guardians of the Galaxy</h2>
+            <a href="http://127.0.0.1:5500/.c/guardiansofgalaxy.html"target="blank"> <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BM2ZmNjQ2MzAtNDlhNi00MmQyLWJhZDMtNmJiMjFlOWY4MzcxXkEyXkFqcGc@._V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="guardians of the galaxy vol 2" data-genre="hollywood">
+            <h2>Guardians of the Galaxy Vol. 2</h2>
+            <a href="http://127.0.0.1:5500/.c/guardiansofgalaxy2.html"target="_blank"> <div class="poster" style="background-image: url('https://lumiere-a.akamaihd.net/v1/images/p_guardiansofthegalaxyvol2_19888_6cc63663.jpeg?region=0%2C0%2C540%2C810');"></div></a>
+        </div>
+        <div class="movie" data-title="ant man" data-genre="hollywood">
+            <h2>Ant-Man</h2>
+            <a href="http://127.0.0.1:5500/.c/antman.html"><div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@.V1_FMjpg_UX1000.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="ant man and the wasp" data-genre="hollywood">
+            <h2>Ant-Man and the Wasp</h2>
+            <a href="http://127.0.0.1:5500/.c/antmanandwasp.html"target="blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BODVkY2ZmZTAtYzFhMi00YzZlLWE2YWMtMDBiYjY2OTU4ZWM0XkEyXkFqcGc@._V1.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="doctor strange" data-genre="hollywood">
+            <h2>Doctor Strange</h2>
+            <a href="http://127.0.0.1:5500/.c/doctorstrange.html"target="blank">  <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="black panther" data-genre="hollywood">
+            <h2>Black Panther</h2>
+            <a href="http://127.0.0.1:5500/.c/blackpanther.html"target="_blank"><div class="poster" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxkAp-UQJV3AeqakST2qqQGTyIRJs98CHLwQ&s');"></div></a>
+        </div>
+        <div class="movie" data-title="spider man homecoming" data-genre="hollywood">
+            <h2>Spider-Man: Homecoming</h2>
+            <a href="http://127.0.0.1:5500/.c/spidermanhomecoming.html"target="_blank"><div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/f/f9/Spider-Man_Homecoming_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="spider man far from home" data-genre="hollywood">
+            <h2>Spider-Man: Far From Home</h2>
+            <a href="http://127.0.0.1:5500/.c/spidermanfarfromhome.html"target="_blank"><div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/b/bd/Spider-Man_Far_From_Home_poster.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="spider man no way home" data-genre="hollywood">
+            <h2>Spider-Man: No Way Home</h2>
+            <a href=""target="_blank"><div class="poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg');"></div></a>
+        </div>
+        
+        <div class="movie" data-title="kgf chapter 2" data-genre="tollywood">
+            <h2>KGF Chapter 2</h2>
+            <a href="http://127.0.0.1:5500/.c/kgf2.html"target="_blank"><div class="poster" style="background-image: url('https://m.media-amazon.com/images/S/pv-target-images/de4f1f9bfb6e740459e7bd8da955aa0b70191e780c1f1347ce73248d3ceda8f4.jpg');"></div></a>
+        </div>
+        <div class="movie" data-title="arjun reddy" data-genre="tollywood">
+            <h2>Arjun Reddy</h2>
+            <a href="http://127.0.0.1:5500/.c/arjunreddy.html"target="_blank"><div class="poster" style="background-image: url('https://m.media-amazon.com/images/S/pv-target-images/79a8a69e853daef866c405bcf2b1253df311463f1bd246cafccda81f173d8fba.jpg');" ></div></a>
+        
+        
+        </div>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
